@@ -1,0 +1,5 @@
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\Algo\bin\Debug\Algo.exe
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\Algo\bin\Debug\Algo.pdb
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\Algo\obj\x86\Debug\Algo.exe
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\Algo\obj\x86\Debug\Algo.pdb
+C:\Users\hozzy\Documents\Visual Studio 2010\Projects\Algo\Algo\obj\x86\Debug\1.csprojResolveAssemblyReference.cache

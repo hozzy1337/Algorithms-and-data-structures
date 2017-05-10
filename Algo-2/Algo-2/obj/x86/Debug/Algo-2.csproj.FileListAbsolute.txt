@@ -1,0 +1,8 @@
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algo-2\bin\Debug\Algo-2.exe
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algo-2\bin\Debug\Algo-2.pdb
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algo-2\obj\x86\Debug\Algo-2.exe
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algo-2\obj\x86\Debug\Algo-2.pdb
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo-2\Algo-2\obj\x86\Debug\Algo-2.exe
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo-2\Algo-2\obj\x86\Debug\Algo-2.pdb
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo-2\Algo-2\bin\Debug\Algo-2.exe
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo-2\Algo-2\bin\Debug\Algo-2.pdb

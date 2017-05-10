@@ -1,0 +1,4 @@
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\2.3\bin\Debug\2.3.exe
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\2.3\bin\Debug\2.3.pdb
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\2.3\obj\x86\Debug\2.3.exe
+C:\Users\hozzy\documents\visual studio 2010\Projects\Algo\2.3\obj\x86\Debug\2.3.pdb

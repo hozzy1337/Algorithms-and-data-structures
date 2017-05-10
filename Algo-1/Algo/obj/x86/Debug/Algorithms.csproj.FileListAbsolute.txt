@@ -1,0 +1,4 @@
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algorithms\bin\Debug\Algorithms.exe
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algorithms\bin\Debug\Algorithms.pdb
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algorithms\obj\x86\Debug\Algorithms.exe
+C:\Users\hozzy\AppData\Local\Temporary Projects\Algorithms\obj\x86\Debug\Algorithms.pdb
