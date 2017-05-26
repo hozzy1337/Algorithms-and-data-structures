@@ -1,0 +1,6 @@
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo-4\Algo-4\bin\Debug\Algo-4.exe.config
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo-4\Algo-4\bin\Debug\Algo-4.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo-4\Algo-4\bin\Debug\Algo-4.pdb
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo-4\Algo-4\obj\Debug\Algo-4.csprojResolveAssemblyReference.cache
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo-4\Algo-4\obj\Debug\Algo-4.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo-4\Algo-4\obj\Debug\Algo-4.pdb
