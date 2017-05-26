@@ -1,0 +1,5 @@
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Queue\bin\Debug\Queue.exe.config
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Queue\bin\Debug\Queue.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Queue\bin\Debug\Queue.pdb
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Queue\obj\Debug\Queue.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Queue\obj\Debug\Queue.pdb

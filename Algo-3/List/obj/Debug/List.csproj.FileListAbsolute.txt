@@ -1,0 +1,5 @@
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\List\bin\Debug\List.exe.config
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\List\bin\Debug\List.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\List\bin\Debug\List.pdb
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\List\obj\Debug\List.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\List\obj\Debug\List.pdb

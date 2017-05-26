@@ -1,0 +1,6 @@
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Algo 3\bin\Debug\Algo 3.exe.config
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Algo 3\bin\Debug\Algo 3.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Algo 3\bin\Debug\Algo 3.pdb
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Algo 3\obj\Debug\LinkedList.csprojResolveAssemblyReference.cache
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Algo 3\obj\Debug\Algo 3.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\Algo 3\Algo 3\obj\Debug\Algo 3.pdb
