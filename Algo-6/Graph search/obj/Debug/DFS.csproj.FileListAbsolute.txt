@@ -1,0 +1,6 @@
+c:\users\hozzy\documents\visual studio 2017\Projects\DFS\DFS\bin\Debug\DFS.exe.config
+c:\users\hozzy\documents\visual studio 2017\Projects\DFS\DFS\bin\Debug\DFS.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\DFS\DFS\bin\Debug\DFS.pdb
+c:\users\hozzy\documents\visual studio 2017\Projects\DFS\DFS\obj\Debug\DFS.csprojResolveAssemblyReference.cache
+c:\users\hozzy\documents\visual studio 2017\Projects\DFS\DFS\obj\Debug\DFS.exe
+c:\users\hozzy\documents\visual studio 2017\Projects\DFS\DFS\obj\Debug\DFS.pdb

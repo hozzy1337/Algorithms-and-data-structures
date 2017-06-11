@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<title>
+			Saper
+		</title>
+	</head>
+	<body>
+	<div id="container">
+	<div id="content">
+        <div id="outer">
+            <div id="headerBar">
+                <table>
+                    <tr width="100%;">
+						<td><input type="number" id="numCols" placeholder=""></td>
+						<td><input type="number" id ="numRows" placeholder=""></td>
+                        <td class="innerHead" id='mbtn'><button>Regenerate field</button></td>
+                    </tr>                    
+                </table>                
+            </div>
+            <br /><br />
+            <table class="gameBoard"></table>
+        </div>
+        
+	</div>
+</div>
+<script>
+ function draw_board(x,y){
+    $('.gameBoard').append('<tr id="header"></tr>');
+     var header=$('.gameBoard').find("#header");
+	 
+	 var counter=y+1;
+    for(var j=0;j<y-1;j++)
+	{
+		header.parent().last().append('<tr class="left" id ="cell"><td></td>');
+        for( i=0; i<x;i++)
+		{
+            var newCount=i+counter;
+            header.parent().last().find(".left").last().append('<td class="cell blank" id='+newCount+'><img src="http://www.chezpoor.com/minesweeper/images/blank.gif"></td>');
+        }
+        counter+=y;
+	}
+	makeBombs(x,y);
+}
+
+function makeBombs(x,y){
+    var numBombs = (x*y)/10;
+    (function makeBomb(){
+        $('.bomb').each(function(){
+            $(this).removeClass('bomb');
+        });
+        var rand=0;
+        for (var i=1;i<numBombs+1;i++){
+            rand=Math.floor(Math.random() * (x*y)) + 1;
+            var cell = $('.gameBoard').find('#'+rand);
+            if (cell.hasClass('bomb')){
+               $('.gameBoard').find('#'+rand+1)
+            } else {
+                cell.addClass('bomb');   
+            }
+            rand=0;
+            
+            
+        }
+    })();
+}
+
+
+function checkCell(id){
+    cell = $('.gameBoard').find('#'+id);
+    if (cell.hasClass('bomb')){
+        $('.bomb').each(function() {
+          $(this).text('');
+          $(this).append('<img src="http://www.chezpoor.com/minesweeper/images/bombrevealed.gif">'); 
+          endGame();
+        });
+           
+    } else if (cell.hasClass('blank')){
+        var bombCount=0;
+        id=parseInt(id,10);
+        var adjacent=[];
+        
+        if (id % numCols === 0){
+            adjacent=[(id - 1 - numCols),(id - numCols),(id-1),(id-1+numCols),(id+numCols)];           
+        } else if (((id-1) % numCols === 0) || id == 1){
+            adjacent=[(id - numCols),((id+1)-numCols),(id+1),(id+numCols),(id+1+numCols)];            
+        } else if (id < numCols){
+           adjacent=[(id-1),(id+1),(id-1+numCols),(id+numCols),(id+1+numCols)];             
+        } else if ((((numCols*numRows)-numCols) < id) && id < (numCols*numRows)) {
+           adjacent=[(id - 1 - numCols),(id - numCols),((id+1)-numCols),(id-1),(id+1)];             
+        } else {
+           adjacent=[(id - 1 - numCols),(id - numCols),((id+1)-numCols),(id-1),(id+1),(id-1+numCols),(id+numCols),(id+1+numCols)]; 
+        } 
+        
+        
+        adjacent.forEach(function(entry){
+            if($('.gameBoard').find('#'+entry).hasClass('bomb')){
+             bombCount++; 
+            }
+        });
+       
+        if (bombCount === 0){
+            $(cell).removeClass('blank');
+            $(cell).text(''); 
+            $(cell).addClass('clicked'); 
+            
+            adjacent.forEach(function(entry){
+                checkCell(entry);             
+            });      
+
+        } else {
+            $(cell).removeClass('blank');
+            $(cell).text(bombCount); 
+            $(cell).addClass('clicked');    
+        }
+
+    }
+}
+function endGame(){
+    $('.cell').each(function(){
+     $(this).removeClass('blank');   
+    });
+}
+
+$(document).ready(function(){
+
+    document.oncontextmenu = function() {return false;};
+     numRows=10;
+     numCols=10;
+
+	 $('#headerBar').find('#mbtn').on('click',function(){
+		 numRows=parseInt(document.getElementById('numRows').value);
+		 numCols=parseInt(document.getElementById('numCols').value)+1;
+        $('.gameBoard').text('');
+        draw_board(numRows,numCols);
+
+    });
+
+    draw_board(numRows,numCols); 
+
+    $(document).on('mousedown','.left td',function(e){
+      if( e.button == 2 ) {
+          if($(this).hasClass('blank')){
+              $(this).removeClass('blank');
+              $(this).addClass('flag');
+              $(this).text('');
+              $(this).append('<img src="http://www.chezpoor.com/minesweeper/images/bombflagged.gif">');
+          } else if($(this).hasClass('flag')) {
+              $(this).removeClass('flag');
+              $(this).addClass('blank');
+              $(this).text('');
+              $(this).append('<img src="http://www.chezpoor.com/minesweeper/images/blank.gif">');
+          }
+      }
+    });
+    
+     $(document).on('mousedown','.left td',function(e){
+          if( e.button === 0 ) {
+              checkCell($(this).attr('id'));
+          }
+     });
+    
+    
+
+   
+    
+    
+});
+		</script>
+
+	</div>
